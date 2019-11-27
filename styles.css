@@ -1,19 +1,106 @@
 section {
   display: grid;
   grid-template-columns: 1fr 300px 1fr;
-  grid-template-rows: 200px 300px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 200px 300px 200px 200px 200px 200px 200px 200px;
   grid-template-areas:
     "a b c"
     "d e f"
     "i j k";
   grid-gap: 20px;
 }
-.banniere {
-  height: 70vh;
-  width: 100vw;
-  background: greenyellow;
-  margin-bottom: 50px;
+nav {
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0px;
 }
+nav div {
+  align-self: center;
+}
+nav img.flag {
+  align-self: center;
+}
+hr {
+  color: gray;
+  box-shadow: 1px 2px 5px grey;
+}
+nav p {
+  align-self: center;
+}
+.banniere {
+  height: 100vh;
+  width: 100vw;
+  background: #e4e6eb;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+  background: url(img/vue.png);
+
+  left: -419px;
+  top: 64px;
+  text-align: center;
+}
+.container {
+  align-self: center;
+}
+.container p:first-child {
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 74px;
+  color: #505050;
+}
+.container p:first-child span {
+  color: #1a73e8;
+}
+.container p:nth-child(2) {
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 25px;
+  color: #000000;
+}
+button {
+  background-color: #1a73e8;
+  border: none;
+  color: white;
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+}
+#container-slogan {
+  margin-top: 350px;
+}
+.slogan {
+  height: 300px;
+  text-align: center;
+  align-items: center;
+  top: 250px;
+  position: sticky;
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 74px;
+  color: #505050;
+  opacity: 0;
+  transform: translateY(250px);
+  transition: opacity 3s, transform 3s;
+}
+.fadeInup {
+  transform: none;
+  opacity: 1;
+}
+
 .produit {
   width: 300px;
   height: 300px;
@@ -22,8 +109,9 @@ section {
   position: sticky;
   grid-row: 2;
   grid-column: 2;
-  margin-bottom: 800px;
+  margin-bottom: 1000px;
 }
+
 aside {
   opacity: 0;
   transition: opacity 3s;
@@ -58,6 +146,13 @@ aside {
   grid-column: 1;
   grid-row: 4;
   justify-self: end;
+}
+#p5 {
+  background: green;
+  width: 100px;
+  height: 100px;
+  grid-column: 3;
+  grid-row: 5;
 }
 .is-reached75 {
   opacity: 0.5;

@@ -53,3 +53,13 @@ ids.forEach(function(id) {
     offset: "5%"
   });
 });
+
+var element = document.querySelector(".slogan");
+
+var waypoint = new Waypoint({
+  element: element,
+  handler: function(direction) {
+    element.classList.add("fadeInUp");
+  },
+  offset: "70%"
+});
