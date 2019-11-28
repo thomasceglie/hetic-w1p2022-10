@@ -1,13 +1,3 @@
-/* section {
-  display: grid;
-  grid-template-columns: 1fr 300px 1fr;
-  grid-template-rows: 200px 300px 200px 200px 200px 200px 200px 200px;
-  grid-template-areas:
-    "a b c"
-    "d e f"
-    "i j k";
-  grid-gap: 20px;
-} */
 body {
   background-color: rgb(243, 243, 243);
   font-family: Helvetica;
@@ -27,7 +17,6 @@ div:last-child {
   top: 33px;
 }
 .burger_bar {
-  display: block;
   width: 30px;
   height: 4px;
   border-radius: 3px;
@@ -49,23 +38,32 @@ nav div {
 }
 nav img.flag {
   align-self: center;
+
   margin-right: 10px;
 }
-ul {
-  transform: translateX(-150px);
-  width: 50px;
-  height: 50px;
+#imenu {
+  transform: translateX(-300px);
+  width: 100px;
+  height: 100px;
+  font-size: large;
 }
+
 .is-open {
-  width: 100vh;
-  height: 5000px;
+  transform: none;
+  width: 100vw;
+  height: 100vh;
   background: chartreuse;
   opacity: 0.5;
-  z-index: 2;
+}
+.imenu {
+  font-size: large;
+  color: black;
+  z-index: 1;
 }
 .logo {
   position: sticky;
   top: 5px;
+  left: 50%;
 }
 hr {
   color: gray;
@@ -221,6 +219,7 @@ aside {
 .background {
   background: #272727;
   color: white;
+  margin-top: 50px;
 }
 .subscribe {
   text-align: center;
@@ -430,19 +429,29 @@ textarea::placeholder {
     height: 80px;
   }
 }
+
 .title {
   margin-top: 100px;
   font-size: 36px;
   text-align: center;
 }
+
 .imgAIVIA {
-  width: 90vw;
-  height: 85vh;
+  margin-left: 10vw;
+  width: 80vw;
+  height: 70vh;
   background-image: url(../img/rectangle-53.png);
   background-position: center;
 }
+
 .itext h1 {
   color: #2f7adb;
   margin-top: 50px;
   margin-bottom: 50px;
+  display: flex;
+}
+.bigtitle {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
 }
