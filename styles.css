@@ -1,16 +1,9 @@
-/* section {
-  display: grid;
-  grid-template-columns: 1fr 300px 1fr;
-  grid-template-rows: 200px 300px 200px 200px 200px 200px 200px 200px;
-  grid-template-areas:
-    "a b c"
-    "d e f"
-    "i j k";
-  grid-gap: 20px;
-} */
 body {
   background-color: rgb(243, 243, 243);
   font-family: Helvetica;
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 0px;
 }
 
 div {
@@ -24,20 +17,26 @@ div:last-child {
   top: 33px;
 }
 .burger_bar {
-  display: block;
   width: 30px;
   height: 4px;
   border-radius: 3px;
   background-color: grey;
   position: absolute;
 }
+.logo-header {
+  width: 50px;
+  height: 50px;
+  padding-left: 40%;
+  justify-content: center;
+}
+
 nav {
   background: white;
   top: 0px;
   position: fixed;
   width: 100vw;
   height: 8vh;
-  z-index: 1;
+  z-index: 2;
   display: flex;
   justify-content: space-between;
 }
@@ -46,7 +45,32 @@ nav div {
 }
 nav img.flag {
   align-self: center;
+
   margin-right: 10px;
+}
+#imenu {
+  transform: translateX(-300px);
+  width: 100px;
+  height: 100px;
+  font-size: large;
+}
+
+.is-open {
+  transform: none;
+  width: 100vw;
+  height: 100vh;
+  background: chartreuse;
+  opacity: 0.5;
+}
+.imenu {
+  font-size: large;
+  color: black;
+  z-index: 1;
+}
+.logo {
+  position: sticky;
+  top: 5px;
+  left: 50%;
 }
 hr {
   color: gray;
@@ -58,13 +82,12 @@ nav p {
 .banniere {
   height: 100vh;
   width: 100vw;
-  background: #e4e6eb;
-  margin-bottom: 50px;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: baseline;
-  background: url(img/vue.png);
+  background: url(img/VUE6.png);
   background-position: -471px 81%;
   left: -419px;
   top: 64px;
@@ -78,7 +101,7 @@ nav p {
   font-weight: bold;
   font-size: 55px;
   line-height: 74px;
-  color: #505050;
+  color: white;
 }
 .container p:first-child span {
   color: #1a73e8;
@@ -86,21 +109,22 @@ nav p {
 .container p:nth-child(2) {
   font-style: normal;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 20px;
   line-height: 25px;
   color: #000000;
+  margin-top: -50px;
 }
 button {
   background-color: #1a73e8;
-  border: none;
   color: white;
   font-style: normal;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 28px;
   width: 150px;
   height: 50px;
   border-radius: 10px;
+  border: none;
 }
 #container-slogan {
   margin-top: 250px;
@@ -148,8 +172,9 @@ button {
   width: 100%;
   height: 100px;
   margin: auto;
-  top: 40vh;
+  top: 45vh;
   position: sticky;
+  z-index: 1;
 }
 .center {
   display: block;
@@ -165,74 +190,12 @@ aside {
   margin-bottom: 500px;
   text-align: center;
   opacity: 0;
-  transition: opacity 2.5s;
-}
-/* .produit {
-  width: 300px;
-  height: 300px;
-  background: yellow;
-  top: 250px;
-  position: sticky;
-  grid-row: 2;
-  grid-column: 2;
-  margin-bottom: 1000px;
+  transition: opacity 0.9s;
+  margin-left: 30px;
+  margin-right: 30px;
+  color: #505050;
 }
 
-aside {
-  opacity: 0;
-  transition: opacity 3s;
-}
-#p1 {
-  background: chocolate;
-  width: 100px;
-  height: 100px;
-  justify-self: end;
-  grid-row: 2;
-}
-#p2 {
-  background: rebeccapurple;
-  width: 100px;
-  height: 100px;
-  align-self: end;
-  grid-column: 3;
-  grid-row: 1;
-}
-#p3 {
-  background: red;
-  width: 100px;
-  height: 100px;
-
-  grid-row: 3;
-  grid-column: 3;
-}
-#p4 {
-  background: orange;
-  width: 100px;
-  height: 100px;
-  grid-column: 1;
-  grid-row: 4;
-  justify-self: end;
-}
-#p5 {
-  background: green;
-  width: 100px;
-  height: 100px;
-  grid-column: 3;
-  grid-row: 5;
-}*/
-/* .is-reached75 {
-  opacity: 0.5;
-}
-.is-reached50 {
-  opacity: 1;
-}
-.is-reached25 {
-  opacity: 0.5;
-}
-.is-reached5 {
-  opacity: 0;
-} 
-*/
 .is-reached60 {
   opacity: 1;
 }
@@ -251,12 +214,26 @@ footer {
   justify-content: space-between;
   align-items: baseline;
 }
+.buy-footer p {
+  margin-left: 15px;
+  z-index: 3;
+}
 .button-footer {
   width: 150px;
   height: 30px;
   font-size: 15px;
-  border-radius: 4px;
-  margin-right: 20px;
+  border-radius: 7px;
+  margin-right: 15px;
+}
+.foot-logo {
+  display: flex;
+}
+.logo-footer {
+  padding-top: 10%;
+  margin-left: 35%;
+  width: 70px;
+  height: 70px;
+  grid-column: 2;
 }
 #p5 {
   opacity: 0;
@@ -265,6 +242,7 @@ footer {
 .background {
   background: #272727;
   color: white;
+  margin-top: 50px;
 }
 .subscribe {
   text-align: center;
@@ -310,9 +288,9 @@ h3 span {
   margin: 30px;
 }
 .foot-div p {
+  text-align: center;
   font-size: 12px;
   margin: 10px;
-  text-align: center;
 }
 .container-logo {
   display: flex;
@@ -327,6 +305,7 @@ h3 span {
 textarea::placeholder {
   padding-top: 8px;
 }
+/*
 ul {
   transform: translateX(-150px);
   width: 50px;
@@ -342,7 +321,8 @@ ul {
 .logo {
   position: sticky;
   top: 5px;
-}
+}*/
+
 
 @media (min-width: 1000px) {
   #section-produit {
@@ -415,6 +395,7 @@ ul {
     width: 90%;
     margin-left: 20px;
     margin-right: 20px;
+    color: #505050;
   }
   aside h3 {
     font-size: 26px;
@@ -489,6 +470,24 @@ ul {
     width: 80px;
     height: 80px;
   }
+  .burger_bar {
+    display: none;
+  }
+
+  div.foot-logo {
+    width: 100vw;
+    display: grid;
+    grid-template-rows: 200px;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+  }
+  .logo-footer {
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    grid-column: 2;
+  }
 }
 
 .title {
@@ -496,14 +495,25 @@ ul {
   font-size: 36px;
   text-align: center;
 }
+
+
 .imgAIVIA {
-  width: 90vw;
-  height: 85vh;
+  margin-left: 10vw;
+  width: 80vw;
+  height: 70vh;
   background-image: url(../img/rectangle-53.png);
   background-position: center;
 }
+
+
 .itext h1 {
   color: #2f7adb;
   margin-top: 50px;
   margin-bottom: 50px;
+  display: flex;
+}
+.bigtitle {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
 }
