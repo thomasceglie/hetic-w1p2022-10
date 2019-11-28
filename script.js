@@ -28,17 +28,17 @@ ids.forEach(function(id) {
 
 var ids = ["p1", "p2", "p3", "p4", "p5"];
 
-ids.forEach(function(id) {
-  var element = document.getElementById(id);
+// ids.forEach(function(id) {
+//   var element = document.getElementById(id);
 
-  var waypoint = new Waypoint({
-    element: element,
-    handler: function(direction) {
-      element.className = "is-reached25";
-    },
-    offset: "25%"
-  });
-});
+//   var waypoint = new Waypoint({
+//     element: element,
+//     handler: function(direction) {
+//       element.className = "is-reached25";
+//     },
+//     offset: "25%"
+//   });
+// });
 
 var ids = ["p1", "p2", "p3", "p4", "p5"];
 
@@ -74,7 +74,7 @@ ids.forEach(function(id) {
     handler: function(direction) {
       element.classList.add("is-reached60");
     },
-    offset: "40%"
+    offset: "35%"
   });
 });
 
