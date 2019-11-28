@@ -315,16 +315,10 @@ textarea {
   h2 {
     color: #505050;
   }
-  .top h3 {
-    color: #505050;
-  }
-  .join {
-    color: black;
+  #gray {
+    color: gray !important;
   }
 
-  h3 {
-    color: black;
-  }
   .produit-ombre {
     display: none;
   }
