@@ -315,6 +315,7 @@ textarea {
   h2 {
     color: #505050;
   }
+
   .join {
     color: white;
   }
@@ -342,6 +343,12 @@ textarea {
   section p {
     font-size: 23px;
     margin: 0px 50px 0px 50px;
+  }
+  section #gray {
+    font-size: 28px;
+  }
+  section {
+    margin-bottom: 100px;
   }
   .feat section:nth-of-type(even) {
     display: grid;
