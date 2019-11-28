@@ -51,6 +51,22 @@ nav img.flag {
   align-self: center;
   margin-right: 10px;
 }
+ul {
+  transform: translateX(-150px);
+  width: 50px;
+  height: 50px;
+}
+.is-open {
+  width: 100vh;
+  height: 5000px;
+  background: chartreuse;
+  opacity: 0.5;
+  z-index: 2;
+}
+.logo {
+  position: sticky;
+  top: 5px;
+}
 hr {
   color: gray;
   box-shadow: 1px 2px 5px grey;
@@ -413,3 +429,20 @@ textarea::placeholder {
     width: 80px;
     height: 80px;
   }
+}
+.title {
+  margin-top: 100px;
+  font-size: 36px;
+  text-align: center;
+}
+.imgAIVIA {
+  width: 90vw;
+  height: 85vh;
+  background-image: url(../img/rectangle-53.png);
+  background-position: center;
+}
+.itext h1 {
+  color: #2f7adb;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
