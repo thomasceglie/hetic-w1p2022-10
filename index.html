@@ -15,13 +15,19 @@
   </head>
   <body>
     <header>
-      <nav>
-        <div>
+      <nav id ="menu">
+       <div id ="menu">
+          <ul>
+             <li>chose</li>
+             <li>petit</li>
+          </ul>
+          <div id ="open-menu" class ="open-menu">
           <div class="burger_bar"></div>
           <div class="burger_bar"></div>
           <div class="burger_bar"></div>
+        </div> 
         </div>
-        <div>Logo</div>
+        <div class ="logo">Logo</div>
         <img src="img/drapeau.png" alt="frenchflag" class="flag" />
       </nav>
       <hr />
@@ -90,5 +96,47 @@
       <p>1200,00 €</p>
       <button class="button-footer">Acheter</button>
     </section>
+    <footer class = "background"> 
+        
+        <div class = "logo">
+            <img src ="C:\Users\User\hetic-w1p2022-10\rond-bleu.png" alt = rond bleu>
+        </div>
+      <section class ="subscribe">
+
+       <form> 
+         <div>
+           <label for="subscribe">Inscrivez-vous à notre newsletter </label>
+           <input name="subscribe" id="subscribe" type="email" placeholder= "Votre adresse mail" class="input">
+           <button type= "submit" class ="button-1"> S'inscrire </button> 
+            </div>
+           
+            <div>
+              <label for="subscribe"> Contact </label> </br>
+              <textarea type="text"  rows="10" cols="50" placeholder ="Votre message..." class="text"></textarea>
+              <button class ="button-1" type ="submit" > Envoyer </button>
+            </div>
+            </form>
+          </section>  
+          <section>
+          <h3> Rejoignez-nous sur : </h3>
+        <div class ="container-logo">
+          <div class ="box"> 
+            <img src ="img/twitter.png" alt="logo-twitter"  >
+          </div>
+          <div class ="box">
+            <img src ="img/instagram.png" alt="logo-instagram">
+          </div>
+          <div class ="box">
+            <img src ="img/facebook.png" alt="logo-facebook">
+            </div>
+          </div>
+        </section>
+        <div class="foot-div">
+          <h3> Mentions légales </h3>
+          <p> Ce site  est optimisé pour Internet Explorer 11, Chrome, Safari ainsi que pour les navigateurs plus récents.</p>
+          <p> Copyright &copy;AIVIA.Tous droits reservés.</p>
+  </div>
+    
+</footer>
   </body>
 </html>
