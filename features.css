@@ -1,0 +1,307 @@
+.produit-ombre {
+  margin-top: 7vh;
+  width: 100%;
+  height: 100%;
+}
+
+section {
+  text-align: center;
+  margin: 20px;
+}
+section span {
+  color: #2f7adb;
+}
+section h2 {
+  margin: 6vh;
+}
+span.red {
+  color: red;
+}
+.produit-technique {
+  margin: 40px 0px 0px 0px;
+}
+.produit-technique img {
+  width: 100vw;
+  height: 30vh;
+}
+
+.memory {
+  display: grid;
+  grid-template-columns: 2;
+  grid-template-rows: 2;
+  grid-template-areas:
+    " a b "
+    " c b ";
+  grid-gap: 10px;
+}
+.memory h4 {
+  grid-area: a;
+  font-size: 20px;
+  text-align: left;
+  color: #2f7adb;
+}
+.memory p {
+  grid-area: b;
+  text-align: left;
+}
+.memory .icon {
+  width: 70px;
+  height: 70px;
+  grid-area: c;
+  align-self: center;
+  text-align: end;
+}
+.appli {
+  display: flex;
+}
+.heart {
+  display: grid;
+  grid-template-columns: 2;
+  grid-template-rows: 2;
+  grid-template-areas:
+    " a b "
+    " a c ";
+  grid-gap: 10px;
+}
+.heart .icon {
+  width: 70px;
+  height: 70px;
+  grid-area: c;
+  align-content: center;
+}
+.heart p {
+  grid-area: a;
+  text-align: right;
+}
+.heart h4 {
+  grid-area: b;
+  font-size: 20px;
+  text-align: right;
+  color: #2f7adb;
+}
+.patch {
+  display: grid;
+  grid-template-columns: 2;
+  grid-template-rows: 2;
+  grid-template-areas:
+    " a b "
+    " c b";
+  grid-gap: 10px;
+}
+.patch .icon {
+  width: 70px;
+  height: 70px;
+  grid-area: c;
+  align-content: center;
+}
+.patch p {
+  grid-area: b;
+  text-align: start;
+}
+.patch h4 {
+  grid-area: a;
+  font-size: 20px;
+  text-align: left;
+  color: #2f7adb;
+}
+.fall {
+  display: grid;
+  grid-template-columns: 2;
+  grid-template-rows: 2;
+  grid-template-areas:
+    " a b "
+    " a c ";
+  grid-gap: 10px;
+}
+.fall .icon {
+  width: 70px;
+  height: 70px;
+  grid-area: c;
+}
+.fall p {
+  grid-area: a;
+  text-align: right;
+}
+.fall h4 {
+  grid-area: b;
+  font-size: 20px;
+  text-align: right;
+  color: #2f7adb;
+}
+.stop {
+  display: grid;
+  grid-template-columns: 2;
+  grid-template-rows: 2;
+  grid-template-areas:
+    " a b "
+    " c b";
+  grid-gap: 10px;
+}
+.stop .icon {
+  width: 70px;
+  height: 70px;
+  grid-area: c;
+  align-content: center;
+}
+.stop p {
+  grid-area: b;
+  text-align: start;
+}
+.stop h4 {
+  grid-area: a;
+  font-size: 20px;
+  text-align: left;
+  color: #2f7adb;
+}
+.geo {
+  display: grid;
+  grid-template-columns: 2;
+  grid-template-rows: 2;
+  grid-template-areas:
+    " a b "
+    " a c ";
+  grid-gap: 10px;
+}
+.geo .icon {
+  width: 70px;
+  height: 70px;
+  grid-area: c;
+}
+.geo p {
+  grid-area: a;
+  text-align: right;
+}
+.geo h4 {
+  grid-area: b;
+  font-size: 20px;
+  text-align: right;
+  color: #2f7adb;
+}
+.sound {
+  display: grid;
+  grid-template-columns: 2;
+  grid-template-rows: 2;
+  grid-template-areas:
+    " a b "
+    " c b";
+  grid-gap: 10px;
+}
+.sound .icon {
+  width: 70px;
+  height: 70px;
+  grid-area: c;
+  align-content: center;
+}
+.sound p {
+  grid-area: b;
+  text-align: start;
+}
+.sound h4 {
+  grid-area: a;
+  font-size: 20px;
+  text-align: left;
+  color: #2f7adb;
+}
+.battery {
+  display: grid;
+  grid-template-columns: 2;
+  grid-template-rows: 2;
+  grid-template-areas:
+    " a b "
+    " a c ";
+  grid-gap: 10px;
+}
+.battery .icon {
+  width: 70px;
+  height: 70px;
+  grid-area: c;
+  text-align: right;
+}
+.battery p {
+  grid-area: a;
+  text-align: right;
+}
+.battery h4 {
+  grid-area: b;
+  font-size: 20px;
+  text-align: right;
+  color: #2f7adb;
+}
+.material {
+  display: grid;
+  grid-template-columns: 2;
+  grid-template-rows: 2;
+  grid-template-areas:
+    " a b "
+    " c b";
+  grid-gap: 10px;
+}
+.material .icon {
+  width: 70px;
+  height: 70px;
+  grid-area: c;
+  align-content: center;
+}
+.material p {
+  grid-area: b;
+  text-align: start;
+}
+.material h4 {
+  grid-area: a;
+  font-size: 20px;
+  text-align: left;
+  color: #2f7adb;
+}
+.button-footer {
+  width: 150px;
+  height: 30px;
+  font-size: 15px;
+  border-radius: 7px;
+  margin-right: 15px;
+}
+.foot-logo {
+  display: flex;
+}
+.logo-footer {
+  padding-top: 10%;
+  margin-left: 35%;
+  width: 70px;
+  height: 70px;
+  grid-column: 2;
+}
+.background {
+  background: #272727;
+  color: white;
+}
+.subscribe {
+  text-align: center;
+}
+form {
+  margin-top: 100px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+}
+label {
+  font-style: bold;
+  font-size: 20px;
+}
+.input {
+  margin-top: 20px;
+  border-radius: 7px;
+  width: 310px;
+  height: 40px;
+  border: none;
+}
+
+textarea {
+  border-radius: 7px;
+  margin-top: 20px;
+}
+
+.button-1 {
+  margin: 30px;
+  width: 150px;
+  height: 40px;
+  margin-bottom: 60px;
+}
