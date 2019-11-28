@@ -446,4 +446,12 @@ textarea::placeholder {
     height: 90px;
     grid-column: 2;
   }
+  .articles button {
+    margin: 30px;
+    width: 150px;
+    height: 40px;
+    margin-bottom: 60px;
+    margin-left: 45vw;
+  }
+  .i;
 }

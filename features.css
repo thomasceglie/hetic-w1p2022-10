@@ -319,11 +319,11 @@ textarea {
     color: #505050;
   }
   .join {
-    color: white;
+    color: black;
   }
-  .foot-div p,
+
   h3 {
-    color: white;
+    color: black;
   }
   .produit-ombre {
     display: none;
@@ -382,20 +382,20 @@ textarea {
     text-align: end;
   }
   .memory .icon {
-    display: grid !important;
-    grid-template-columns: 2 !important;
-    grid-template-rows: 2 !important;
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 2;
     grid-template-areas:
       " a b "
-      " c b " !important;
-    grid-gap: 30px !important;
-    margin: 100px 100px 0px 350px !important;
+      " c b ";
+    grid-gap: 30px;
+    margin: 100px 100px 0px 350px;
   }
   .memory p {
-    grid-area: b !important;
+    grid-area: b;
   }
   .memory .icon {
-    grid-area: c !important;
+    grid-area: c;
   }
   .input {
     margin-top: 20px;
