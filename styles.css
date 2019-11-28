@@ -236,6 +236,9 @@ aside {
 .is-reached60 {
   opacity: 1;
 }
+footer {
+  background-color: black;
+}
 
 .buy-footer {
   background: white;
@@ -309,6 +312,7 @@ h3 span {
 .foot-div p {
   font-size: 12px;
   margin: 10px;
+  text-align: center;
 }
 .container-logo {
   display: flex;
@@ -338,4 +342,168 @@ ul {
 .logo {
   position: sticky;
   top: 5px;
+}
+
+@media (min-width: 1000px) {
+  #section-produit {
+    display: grid;
+    grid-template-columns: 1fr 300px 300px 1fr;
+    grid-template-rows: 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px;
+    grid-template-areas:
+      "a b c"
+      "d e f"
+      "i j k";
+    grid-gap: 20px;
+  }
+  .banniere {
+    height: 95vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    background: url(img/VUE6.png);
+    background-position: -50px 50%;
+    left: -419px;
+    top: 64px;
+    text-align: center;
+  }
+  .div-sticky {
+    z-index: 2;
+  }
+  .i-picto {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 200px;
+    grid-template-areas: "a b c";
+    top: 100px;
+    position: sticky;
+    height: 200px;
+  }
+  .order {
+    grid-area: a;
+  }
+  .vector {
+    grid-area: b;
+  }
+  .heart {
+    grid-area: c;
+  }
+  img.center {
+    width: 150%;
+    height: 150%;
+    text-align: center;
+  }
+  .produit {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    top: 200px;
+    position: sticky;
+    grid-row: 2;
+    grid-column: 2 / span 2;
+    margin-top: 100px;
+    margin-bottom: 300px;
+    align-self: flex-start;
+    padding-right: 30%;
+  }
+
+  aside {
+    margin-bottom: 0px;
+    opacity: 0;
+    transition: opacity 3s;
+    width: 90%;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  aside h3 {
+    font-size: 26px;
+  }
+  aside p {
+    font-size: 20px;
+  }
+  aside span {
+    color: #1a73e8;
+  }
+  #p1 {
+    grid-row: 3;
+    grid-column: 4;
+    justify-self: end;
+  }
+  #p2 {
+    align-self: end;
+    grid-row: 5;
+    grid-column: 1;
+  }
+  #p3 {
+    grid-row: 7;
+    grid-column: 4;
+  }
+  #p4 {
+    grid-column: 1;
+    grid-row: 9;
+    justify-self: end;
+  }
+  #p5 {
+    grid-column: 3;
+    grid-row: 5;
+  }
+  .security {
+    font-size: 22px;
+    margin: 0px 200px 0px 200px;
+  }
+  .is-reached75 {
+    opacity: 0.5;
+  }
+  .is-reached50 {
+    opacity: 1;
+  }
+  .is-reached25 {
+    opacity: 0.5;
+  }
+  .is-reached5 {
+    opacity: 0;
+  }
+  form {
+    height: 600px;
+    flex-direction: column;
+  }
+  .input {
+    width: 75%;
+    height: 10%;
+  }
+  .text {
+    width: 75%;
+    height: 30%;
+  }
+  .container-logo {
+    margin-top: 60px;
+  }
+  .foot-div {
+    text-align: center;
+  }
+  .foot-div p {
+    font-size: 18px;
+  }
+  .box img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.title {
+  margin-top: 100px;
+  font-size: 36px;
+  text-align: center;
+}
+.imgAIVIA {
+  width: 90vw;
+  height: 85vh;
+  background-image: url(../img/rectangle-53.png);
+  background-position: center;
+}
+.itext h1 {
+  color: #2f7adb;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
