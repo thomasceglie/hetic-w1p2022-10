@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="css/form.css" />
+    <script defer type="text/javascript" src="form.js"></script>
+
+    <title>Formulaire</title>
+  </head>
+  <body>
+    <header>
+      <nav></nav>
+      <hr />
+    </header>
+    <form>
+      <legend>Choissez votre couleur</legend>
+
+      <img
+        class="product-image"
+        src="images/produit-grisfonce.png"
+        alt="image-grisfonce"
+      />
+
+      <label for="color"></label>
+
+      <div class="buttons-colors">
+        <input
+          id="color"
+          name="couleur-noir"
+          class="button-color-darkgray"
+          type="button"
+        />
+        <input
+          id="color"
+          name="couleur-blanc"
+          class="button-color-white"
+          type="button"
+        />
+        <input
+          id="color"
+          name="couleur-bleu"
+          class="button-color-blue"
+          type="button"
+        />
+        <input
+          id="color"
+          name="couleur-vert"
+          class="button-color-beige"
+          type="button"
+        />
+        <input
+          id="color"
+          name="couleur-gris"
+          class="button-color-lightgrey"
+          type="button"
+        />
+      </div>
+      <legend>Votre identité</legend>
+
+      <ol>
+        <li>
+          <label for="nom">Nom</label>
+          <input
+            id="nom"
+            name="nom"
+            type="text"
+            placeholder="Prénom et Nom"
+            required
+            autofocus
+          />
+        </li>
+
+        <li>
+          <label for="email">Email</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="exemple@domaine.com"
+            required
+          />
+        </li>
+
+        <li>
+          <label for="telephone">Téléphone</label>
+          <input
+            id="telephone"
+            name="telephone"
+            type="tel"
+            placeholder="Ex: +33 6 55 00 00 00"
+            pattern="\d+"
+            required
+          />
+        </li>
+      </ol>
+      <legend>Adresse de livraison</legend>
+
+      <ol>
+        <li>
+          <label for="adresse">Adresse</label>
+          <textarea id="adresse" name="adresse" rows="3" required></textarea>
+        </li>
+
+        <li>
+          <label for="codepostal">Code postal</label>
+          <input
+            id="codepostal"
+            name="codepostal"
+            type="text"
+            required
+            pattern="\d+"
+            maxlength="5"
+          />
+        </li>
+
+        <li>
+          <label for="pays">Pays</label>
+          <input id="pays" name="pays" type="text" required />
+        </li>
+      </ol>
+
+      <legend>Informations CB</legend>
+
+      <ol>
+        <li>
+          <ol class="cards">
+            <li>
+              <input id="visa" name="type_de_carte" type="radio" />
+              <label for="visa"></label>
+              <img src="images/visa.svg" alt="visa" />
+            </li>
+
+            <li>
+              <input id="amex" name="type_de_carte" type="radio" />
+              <label for="amex"></label>
+              <img src="images/amex.svg" alt="amex" />
+            </li>
+            <li>
+              <input id="mastercard" name="type_de_carte" type="radio" />
+              <label for="mastercard"></label>
+              <img src="images/mastercard.svg" alt="mastercard" />
+            </li>
+            <li>
+              <input id="paypal" name="type_de_carte" type="radio" />
+              <label for="paypal"></label>
+              <img src="images/paypal.svg" alt="paypal" />
+            </li>
+          </ol>
+        </li>
+
+        <li>
+          <label for="numero_de_carte">N° de carte</label>
+          <input
+            id="numero_de_carte"
+            name="numero_de_carte"
+            placeholder="0000 0000 0000 0000"
+            input
+            inputmode="numeric"
+            pattern="\d+"
+            required
+            maxlength="16"
+          />
+        </li>
+        <li>
+          <label for="securite">CVV</label>
+          <input
+            id="securite"
+            name="securite"
+            required
+            input
+            inputmode="numeric"
+            placeholder="123"
+            pattern="\d+"
+            maxlength="3"
+          />
+        </li>
+
+        <li>
+          <label for="expiration">Date d'expiration</label>
+
+          <input
+            id="expiration"
+            name="expiration"
+            type="date"
+            required
+            pattern="\d+"
+          />
+        </li>
+
+        <li>
+          <label for="nom_porteur">Nom du porteur</label>
+          <input
+            id="nom_porteur"
+            name="nom_porteur"
+            type="text"
+            placeholder="Nom sur la carte"
+            required
+          />
+        </li>
+      </ol>
+
+      <button type="submit" class="buy-button">Acheter</button>
+    </form>
+  </body>
+</html>

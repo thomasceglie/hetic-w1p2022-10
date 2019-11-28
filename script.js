@@ -28,20 +28,6 @@ ids.forEach(function(id) {
 
 var ids = ["p1", "p2", "p3", "p4", "p5"];
 
-// ids.forEach(function(id) {
-//   var element = document.getElementById(id);
-
-//   var waypoint = new Waypoint({
-//     element: element,
-//     handler: function(direction) {
-//       element.className = "is-reached25";
-//     },
-//     offset: "25%"
-//   });
-// });
-
-var ids = ["p1", "p2", "p3", "p4", "p5"];
-
 ids.forEach(function(id) {
   var element = document.getElementById(id);
 
@@ -88,4 +74,11 @@ ids.forEach(function(id) {
     },
     offset: "80px"
   });
+});
+
+var opener = document.getElementById("menu-opener");
+var menu = document.getElementById("menu");
+
+opener.addEventListener("click", function() {
+  menu.classList.toggle("is-open");
 });

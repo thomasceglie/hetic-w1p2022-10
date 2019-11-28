@@ -3,7 +3,9 @@
   width: 100%;
   height: 100%;
 }
-
+.product-shadow {
+  display: none;
+}
 section {
   text-align: center;
   margin: 20px;
@@ -277,9 +279,7 @@ span.red {
   text-align: center;
 }
 form {
-  margin-top: 100px;
-  margin-bottom: 40px;
-  display: flex;
+  height: 600px;
   flex-direction: column;
 }
 label {
@@ -289,8 +289,7 @@ label {
 .input {
   margin-top: 20px;
   border-radius: 7px;
-  width: 310px;
-  height: 40px;
+  height: 70%;
   border: none;
 }
 
@@ -304,4 +303,104 @@ textarea {
   width: 150px;
   height: 40px;
   margin-bottom: 60px;
+}
+
+@media (min-width: 1000px) {
+  p {
+    color: #505050;
+  }
+  h3 {
+    color: #505050;
+  }
+  h2 {
+    color: #505050;
+  }
+  .top h3 {
+    color: #505050;
+  }
+  .join {
+    color: white;
+  }
+  .foot-div p,
+  h3 {
+    color: white;
+  }
+  .produit-ombre {
+    display: none;
+  }
+  .product-shadow {
+    display: initial;
+    margin-top: 7vh;
+    width: 90vw;
+    height: 89vh;
+  }
+  .produit-technique img {
+    width: 100vw;
+    height: 93vh;
+  }
+  section h3 {
+    font-size: 30px;
+  }
+  section h2 {
+    font-size: 50px;
+    margin-top: 100px;
+  }
+  section p {
+    font-size: 23px;
+    margin: 0px 50px 0px 50px;
+  }
+  .feat section:nth-of-type(even) {
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 2;
+    grid-template-areas:
+      " a b "
+      " c b ";
+    grid-gap: 30px;
+    margin: 100px 100px 0px 350px;
+  }
+  .feat section:nth-of-type(even) p {
+    font-size: 26px;
+  }
+  .feat section:nth-of-type(odd) {
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 2;
+    grid-template-areas:
+      " a b "
+      " a c ";
+    grid-gap: 30px;
+    margin: 100px 200px 0px 250px;
+  }
+  .feat section:nth-of-type(odd) p {
+    font-size: 26px;
+  }
+  .feat section:nth-of-type(odd) .icon {
+    width: 70px;
+    height: 70px;
+    grid-area: c;
+    text-align: end;
+  }
+  .memory .icon {
+    display: grid !important;
+    grid-template-columns: 2 !important;
+    grid-template-rows: 2 !important;
+    grid-template-areas:
+      " a b "
+      " c b " !important;
+    grid-gap: 30px !important;
+    margin: 100px 100px 0px 350px !important;
+  }
+  .memory p {
+    grid-area: b !important;
+  }
+  .memory .icon {
+    grid-area: c !important;
+  }
+  .input {
+    margin-top: 20px;
+    border-radius: 7px;
+    height: 100%;
+    border: none;
+  }
 }
