@@ -350,6 +350,12 @@ textarea {
   section {
     margin-bottom: 100px;
   }
+  .sentence {
+    margin-top: 100px;
+  }
+  .tecnical {
+    margin-bottom: 200px;
+  }
   .feat section:nth-of-type(even) {
     display: grid;
     grid-template-columns: 2;
