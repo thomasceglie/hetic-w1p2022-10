@@ -1,0 +1,90 @@
+.menu-burger {
+  grid-column: 21;
+  grid-row: 1;
+  font-size: 23px;
+  position: relative;
+  top: 6px;
+}
+
+.shop {
+  grid-column: 19;
+  grid-row: 1;
+  font-size: 23px;
+  position: relative;
+  top: 6px;
+}
+
+.users {
+  grid-column: 17;
+  grid-row: 1;
+  font-size: 20px;
+  position: relative;
+  top: 8px;
+}
+
+nav {
+  position: relative;
+}
+
+.mobile-menu {
+  display: none;
+  background-color: rgb(18, 106, 180);
+  color: white;
+  width: 81%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  box-shadow: 0 0 0 6px rgba(0, 0, 0, 0.1);
+}
+
+.close {
+  height: 40px;
+}
+
+.is-open {
+  display: block;
+}
+
+.is-close {
+  display: none;
+}
+
+.close #close {
+  color: white;
+  position: relative;
+  top: 4px;
+  left: 9px;
+}
+
+.close #close i {
+  font-size: 25px;
+}
+
+.mobile-menu ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+}
+
+.mobile-menu li {
+  padding: 10px 0 10px 0;
+}
+
+.mobile-menu a:hover {
+  font-weight: bold;
+}
+
+.mobile-menu i {
+  font-size: 18px;
+  position: relative;
+  top: 2px;
+}
+@media (min-width: 1000px) {
+  .menu-burger {
+    display: none;
+  }
+}
