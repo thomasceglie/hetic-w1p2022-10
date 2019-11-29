@@ -269,6 +269,10 @@ h3 span {
   text-align: justify;
   margin: 30px;
 }
+.link-security {
+  text-align: center;
+  margin-top: 100px;
+}
 .foot-div p {
   text-align: center;
   font-size: 12px;
@@ -286,6 +290,25 @@ h3 span {
 }
 textarea::placeholder {
   padding-top: 8px;
+}
+.articles button {
+  margin: 30px;
+  width: 150px;
+  height: 40px;
+  margin-bottom: 60px;
+  margin-left: 45vw;
+}
+.link-security a {
+  text-align: center;
+  margin-top: 40px;
+  text-decoration: none;
+  color: #1a73e8;
+  transition: transform 0.2s ease-in, border 2s;
+
+  font-size: 18px;
+}
+.link-security:hover {
+  transform: scale(1.1);
 }
 
 @media (min-width: 1000px) {
@@ -397,6 +420,17 @@ textarea::placeholder {
     font-size: 22px;
     margin: 0px 200px 0px 200px;
   }
+  .link-security a {
+    text-align: center;
+    margin-top: 40px;
+    text-decoration: none;
+    color: #1a73e8;
+    transition: transform 0.2s ease-in;
+    font-size: 20px;
+  }
+  .link-security:hover {
+    transform: scale(1.1);
+  }
   .is-reached75 {
     opacity: 0.5;
   }
@@ -453,5 +487,4 @@ textarea::placeholder {
     margin-bottom: 60px;
     margin-left: 45vw;
   }
-  .i;
 }
