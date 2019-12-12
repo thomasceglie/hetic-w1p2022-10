@@ -42,7 +42,7 @@ nav.is-open {
   transform: translateY(4px);
 }
 .open-icon {
-  transition: background-color 0.3s;
+  transition: background-color 0.1s;
 }
 nav.is-open .open-icon {
   background-color: transparent;
