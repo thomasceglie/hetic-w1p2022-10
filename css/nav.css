@@ -1,0 +1,124 @@
+nav {
+  position: fixed;
+  top: 0;
+  background-color: white;
+  height: 50px;
+  width: 100vw;
+  overflow: hidden;
+  transition: height 0.5s, width 0.5s, border-radius 0.3s;
+  z-index: 3;
+}
+nav.is-open {
+  height: 100vh;
+  width: 100vw;
+  border-radius: 0;
+}
+.open {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.open-icon,
+.open-icon::before,
+.open-icon::after {
+  width: 30px;
+  height: 4px;
+  background-color: #1a73e8;
+  border-radius: 10px;
+}
+.open-icon::before,
+.open-icon::after {
+  content: "";
+  display: block;
+  transition: transform 0.3s;
+}
+.open-icon::before {
+  transform: translateY(-8px);
+}
+.open-icon::after {
+  transform: translateY(4px);
+}
+.open-icon {
+  transition: background-color 0.3s;
+}
+nav.is-open .open-icon {
+  background-color: transparent;
+}
+nav.is-open .open-icon::before {
+  transform: translateY(2px) rotate(45deg);
+}
+nav.is-open .open-icon::after {
+  transform: translateY(-2px) rotate(-45deg);
+}
+nav.is-open ul {
+  opacity: 1;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  height: 80vh;
+  opacity: 0;
+  transition: opacity 3s;
+  padding-left: 0px;
+}
+li {
+  font-size: 40px;
+  text-transform: uppercase;
+  font-family: Helvetica;
+}
+li a {
+  color: #1a73e8;
+  text-decoration: none;
+}
+li:not(:last-child) {
+  margin-bottom: 30px;
+}
+.logo-header {
+  width: 80px;
+  height: 80px;
+}
+.logo-header-min {
+  width: 50px;
+  height: 50px;
+}
+
+@media (min-width: 600px) {
+  .open {
+    display: none;
+  }
+  #nav {
+    font-family: Helvetica;
+    border-radius: 0;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    background-color: white;
+  }
+  #nav ul {
+    opacity: 1;
+    height: 100%;
+    width: 80%;
+    margin-top: 0px;
+    position: static;
+    flex-direction: row;
+    transform: none;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #nav li {
+    margin: 0px 40px 0px 40px;
+    margin-bottom: 0px;
+    font-size: 20px;
+  }
+  .logo-header {
+    width: 50px;
+    height: 50px;
+  }
+}

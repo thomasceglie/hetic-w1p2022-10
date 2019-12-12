@@ -1,3 +1,9 @@
+html {
+  height: 100%;
+}
+#nav {
+  margin-top: 0px;
+}
 .produit-ombre {
   margin-top: 7vh;
   width: 100%;

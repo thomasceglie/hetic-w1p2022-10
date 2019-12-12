@@ -75,10 +75,3 @@ ids.forEach(function(id) {
     offset: "80px"
   });
 });
-
-var opener = document.getElementById("menu-opener");
-var menu = document.getElementById("menu");
-
-opener.addEventListener("click", function() {
-  menu.classList.toggle("is-open");
-});

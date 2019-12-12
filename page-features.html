@@ -4,28 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script defer src="nav.js"></script>
     <link rel="stylesheet" href="css/features.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/nav.css">
     <link rel="icon" type="image/png" href="img/logo.png" />
     <title>AIVIA</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <div>
-          <div class="burger_bar"></div>
-          <div class="burger_bar"></div>
-          <div class="burger_bar"></div>
-        </div>
-        <div>
-          <a href="index.html"
-            ><img src="img/logo.png" alt="logo" class="logo-header"
-          /></a>
-        </div>
-        <img src="img/drapeau.png" alt="frenchflag" class="flag" />
-      </nav>
-      <hr />
-    </header>
+      <nav id="nav">
+          <div class="open" id="open">
+            <div class="open-icon"></div>
+          </div>
+          <ul>
+            <li> <img src="img/logo.png" alt="logo" class="logo-header"> </li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="page-features.html">Features</a></li>
+            <li><a href="article.html">Articles</a></li>
+          </ul>
+        </nav>
 
     <section class="top">
       <img src="img/produit-ombre.png" alt="produit" class="produit-ombre" />
